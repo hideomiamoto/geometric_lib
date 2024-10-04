@@ -1,34 +1,15 @@
-# Math formulas
-The main purpose of the project is to learn how to use git and github. The formulas below are implemented as programs and are used for tests.
+#  Geometric figures
+Этот проект предоставляет функции для вычисления площади и периметра круга.
 
-### Area
-- Circle: S = πR²
-- Rectangle: S = ab
-- Triangle: S = ½ab
-- Square: S = a²
+### 1. ``area(r)``
 
-### Perimeter
-- Circle: P = 2πR
-- Rectangle: P = 2a + 2b
-- Triangle: P = a + b + c
-- Square: P = 4a
+* **Описание**: Вычисляет площадь круга по радиусу.
+* **Параметры**: ``r``: радиус круга (число).
+* **Возвращаемое значение**: Площадь круга (число).
 
-## Examples
+**Examples**
 ```
-	# Пример использования приложения
-    def area(a, b):
-    '''
-    Возвращает площадь четырёхугольника
-
-        Параметры: 
-            a (int): первое десятичное число
-            b (int): второе десятичное число
-
-        Возвращаемое значение: десятичное число произведения a и b
-
-    '''
-    return a * b
-
-    print(area(4,4)) # Вернёт площадь квадрата со сторонами 4×4
+radius = 5
+circle_area = area(radius)
+print(f"Площадь круга с радиусом {radius} равна {circle_area}")
 ```
-
