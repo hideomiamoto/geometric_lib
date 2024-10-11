@@ -1,7 +1,14 @@
+def area_square(a):
+    '''
+    Принимает на вход десятичное число a (int), возвращает площадь квадрата
 
-def area(a):
+    '''
     return a * a
 
 
-def perimeter(a):
+def perimeter_square(a):
+    '''
+    Принимает на вход десятичное число a (int), возвращает периметр квадрата
+
+    '''
     return 4 * a
