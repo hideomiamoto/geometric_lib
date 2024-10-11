@@ -117,8 +117,8 @@ print(f"Периметр круга с радиусом {radius} равен {cir
 
 ## История изменений
 * 2024-10-2 added new files ([d8e00d](https://github.com/hideomiamoto/geometric_lib/commit/d8e00d))
-* 2024-10-2 Docs added ([d078c8](https://github.com/hideomiamoto/geometric_lib/commit/d078c8))
-* 2024-10-2 Circle and square added ([8ba9ae](https://github.com/hideomiamoto/geometric_lib/commit/8ba9ae))
+* 2021-03-4 Docs added ([d078c8](https://github.com/hideomiamoto/geometric_lib/commit/d078c8))
+* 2021-03-4 Circle and square added ([8ba9ae](https://github.com/hideomiamoto/geometric_lib/commit/8ba9ae))
 
 **Автор**: hideomiamoto
 
