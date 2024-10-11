@@ -114,54 +114,11 @@ radius = 5
 circle_perimeter = perimeter_circle(radius)
 print(f"Периметр круга с радиусом {radius} равен {circle_perimeter}")
 ```
-**Пример использования**
-```python
-import math
 
-# Импортируем функции из модуля
-from geometric_figures import area_square, perimeter_square, area_triangle, perimeter_triangle, area_rectangle, perimeter_rectangle, area_circle, perimeter_circle
-
-# Вычисляем площадь и периметр различных фигур
-square_side = 5
-square_area = area_square(square_side)
-square_perimeter = perimeter_square(square_side)
-
-triangle_base = 5
-triangle_height = 4
-triangle_area = area_triangle(triangle_base, triangle_height)
-triangle_side1 = 5
-triangle_side2 = 4
-triangle_side3 = 3
-triangle_perimeter = perimeter_triangle(triangle_side1, triangle_side2, triangle_side3)
-
-rectangle_length = 5
-rectangle_width = 4
-rectangle_area = area_rectangle(rectangle_length, rectangle_width)
-rectangle_perimeter = perimeter_rectangle(rectangle_length, rectangle_width)
-
-circle_radius = 5
-circle_area = area_circle(circle_radius)
-circle_perimeter = perimeter_circle(circle_radius)
-
-# Выводим результаты
-print(f"Площадь квадрата со стороной {square_side} равна {square_area}")
-print(f"Периметр квадрата со стороной {square_side} равен {square_perimeter}")
-
-print(f"Площадь треугольника с основанием {triangle_base} и высотой {triangle_height} равна {triangle_area}")
-print(f"Периметр треугольника со сторонами {triangle_side1}, {triangle_side2}, {triangle_side3} равен {triangle_perimeter}")
-
-print(f"Площадь прямоугольника с длиной {rectangle_length} и шириной {rectangle_width} равна {rectangle_area}")
-print(f"Периметр прямоугольника с длиной {rectangle_length} и шириной {rectangle_width} равен {rectangle_perimeter}")
-
-print(f"Площадь круга с радиусом {circle_radius} равна {circle_area}")
-print(f"Периметр круга с радиусом {circle_radius} равен {circle_perimeter}")
-```
-
-**Дополнительная информация**:
-
-Модуль ``math`` содержит константу ``pi``, которая используется в функциях для вычисления площади и периметра круга.
-
-Для использования проекта необходимо импортировать модуль ``geometric_figures`` и использовать его функции.
+## История изменений
+* 2024-10-2 added new files ([d8e00d](https://github.com/hideomiamoto/geometric_lib/commit/d8e00d))
+* 2024-10-2 Docs added ([d078c8](https://github.com/hideomiamoto/geometric_lib/commit/d078c8))
+* 2024-10-2 Circle and square added ([8ba9ae](https://github.com/hideomiamoto/geometric_lib/commit/8ba9ae))
 
 **Автор**: hideomiamoto
 
