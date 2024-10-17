@@ -1,4 +1,4 @@
-def area_rectangle(a, b):
+def area(a, b):
     '''
     Возвращает площадь четырёхугольника
 
@@ -11,7 +11,7 @@ def area_rectangle(a, b):
     '''
     return a * b 
 
-def perimeter_rectangle(a, b):
+def perimeter(a, b):
     '''
     Возвращает периметр четырёхугольника
 

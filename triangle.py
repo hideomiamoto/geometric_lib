@@ -1,4 +1,4 @@
-def area_triangle(a, h):
+def area(a, h):
     '''
     Возвращает площадь треугольника
 
@@ -11,7 +11,7 @@ def area_triangle(a, h):
     '''
     return a * h / 2 
 
-def perimeter_triangle(a, b, c):
+def perimeter(a, b, c):
     '''
     Возвращает периметр треугольника
 

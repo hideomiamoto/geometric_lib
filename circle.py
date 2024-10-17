@@ -1,7 +1,7 @@
 import math
 
 
-def area_circle(r):
+def area(r):
     '''
     Возвращает площадь окружности
 
@@ -10,7 +10,7 @@ def area_circle(r):
     return math.pi * r * r
 
 
-def perimeter_circle(r):
+def perimeter(r):
     '''
     Возвращает периметр окружности
 
