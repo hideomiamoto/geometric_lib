@@ -2,7 +2,7 @@ import unittest
 from triangle import area, perimeter
 
 
-class TestSquareFunctions(unittest.TestCase):
+class TestTriangleFunctions(unittest.TestCase):
     def test_area(self):
         # Arrange
         a, h = 5, 10

@@ -20,7 +20,7 @@ def calc(fig, func, size):
     assert fig in figs and func in funcs
 
     key = f"{fig}-{func}"
-    assert sizes.get(key) == len(size) and all(s >= 0 for s in size)
+    assert sizes.get(key) == len(size) and all(n >= 0 for n in size)
 
     if fig == "triangle" and func == "perimeter":
         a, b, c = size

@@ -3,7 +3,7 @@ import math
 from circle import area, perimeter
 
 
-class TestSquareFunctions(unittest.TestCase):
+class TestCircleFunctions(unittest.TestCase):
     def test_area(self):
         # Arrange
         r = 3
