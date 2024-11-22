@@ -1,3 +1,9 @@
+import circle
+import square
+import triangle
+
+__all__ = ['circle', 'square', 'triangle']
+
 figs = ['circle', 'square', 'triangle']
 funcs = ['perimeter', 'area']
 sizes = {
@@ -11,8 +17,7 @@ sizes = {
 
 
 def calc(fig, func, size):
-    assert fig in figs
-    assert func in funcs
+    assert fig in figs and func in funcs
 
     key = f"{fig}-{func}"
     assert sizes.get(key) == len(size) and all(s >= 0 for s in size)
