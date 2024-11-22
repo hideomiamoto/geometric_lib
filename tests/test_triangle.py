@@ -1,6 +1,7 @@
 import unittest
 from triangle import area, perimeter
 
+
 class TestSquareFunctions(unittest.TestCase):
     def test_area(self):
         # Arrange
@@ -23,6 +24,7 @@ class TestSquareFunctions(unittest.TestCase):
 
         # Assert
         self.assertEqual(result, expected_result)
+
 
 if __name__ == "__main__":
     unittest.main()

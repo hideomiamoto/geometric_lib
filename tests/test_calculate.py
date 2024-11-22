@@ -34,5 +34,6 @@ class TestCalculate(unittest.TestCase):
                 with self.assertRaises(AssertionError):
                     calc(fig, func, size)
 
+
 if __name__ == "__main__":
     unittest.main()
