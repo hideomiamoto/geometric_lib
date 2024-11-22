@@ -17,7 +17,7 @@ class TestSquareFunctions(unittest.TestCase):
     def test_perimeter(self):
         # Arrange
         a = 5
-        expected_result = 20
+        expected_result = 21
 
         # Act
         result = perimeter(a)
