@@ -9,6 +9,9 @@ def area(a, h):
         Возвращаемое значение: десятичное число
 
     '''
+    if a <= 0 or h <= 0:
+        raise ValueError("Is not a triangle")
+
     return a * h / 2
 
 
@@ -23,7 +26,7 @@ def perimeter(a, b, c):
         Возвращаемое значение: десятичное число, сумма чисел a, b и c
 
     '''
-    if a + b > c and a + c > b and b + c > a:
-        return a + b + c
-    else:
-        print("Is not a triangle")
+    if a <= 0 or b <= 0 or c <= 0:
+        if a + b <= c and a + c <= b and b + c <= a:
+            raise ValueError("Is not a triangle")
+    return a + b + c

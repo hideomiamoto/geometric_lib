@@ -3,11 +3,11 @@ name: tests
 on:
   push:
     branches:
-      - tests
+      - main
       - release
   pull_request:
     branches:
-      - main
+      - master
       - release
       - develop
 
@@ -30,7 +30,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.13'

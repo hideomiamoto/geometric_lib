@@ -17,7 +17,8 @@ sizes = {
 
 
 def calc(fig, func, size):
-    assert fig in figs and func in funcs
+    assert fig in figs, "Invalid figure"
+    assert func in funcs, "Invalid function"
 
     key = f"{fig}-{func}"
     assert sizes.get(key) == len(size) and all(n >= 0 for n in size)
