@@ -23,4 +23,7 @@ def perimeter(a, b, c):
         Возвращаемое значение: десятичное число, сумма чисел a, b и c
 
     '''
-    return a + b + c
+    if a + b > c and a + c > b and b + c > a:
+        return a + b + c
+    else:
+        print("Is not a triangle")

@@ -22,10 +22,6 @@ def calc(fig, func, size):
     key = f"{fig}-{func}"
     assert sizes.get(key) == len(size) and all(n >= 0 for n in size)
 
-    if fig == "triangle" and func == "perimeter":
-        a, b, c = size
-        assert a + b > c and a + c > b and b + c > a, "Is not a triangle"
-
     result = eval(f'{fig}.{func}(*{size})')
     return result
 
