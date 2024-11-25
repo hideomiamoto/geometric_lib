@@ -26,6 +26,16 @@ class TestCircleFunctions(unittest.TestCase):
         # Assert
         self.assertAlmostEqual(result, expected_result)
 
+    def test_incorrect_area(self):
+        r = -1
+        with self.assertRaises(ValueError):
+            area(r)
+
+    def test_incorrect_perimeter(self):
+        r = -1
+        with self.assertRaises(ValueError):
+            perimeter(r)
+
 
 if __name__ == "__main__":
     unittest.main()

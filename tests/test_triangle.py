@@ -25,6 +25,16 @@ class TestTriangleFunctions(unittest.TestCase):
         # Assert
         self.assertEqual(result, expected_result)
 
+    def test_incorrect_area(self):
+        a, h = -1, 0
+        with self.assertRaises(ValueError):
+            area(a, h)
+
+    def test_incorrect_perimeter(self):
+        a, b, c = -1, 0, 1
+        with self.assertRaises(ValueError):
+            perimeter(a, b, c)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -27,6 +27,6 @@ def perimeter(a, b, c):
 
     '''
     if a <= 0 or b <= 0 or c <= 0:
-        if a + b <= c and a + c <= b and b + c <= a:
-            raise ValueError("Is not a triangle")
+        raise ValueError("Is not a triangle")
+
     return a + b + c

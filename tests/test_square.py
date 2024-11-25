@@ -25,6 +25,15 @@ class TestSquareFunctions(unittest.TestCase):
         # Assert
         self.assertAlmostEqual(result, expected_result)
 
+    def test_incorrect_area(self):
+        a = -1
+        with self.assertRaises(ValueError):
+            area(a)
+
+    def test_incorrect_perimeter(self):
+        a = -1
+        with self.assertRaises(ValueError):
+            perimeter(a)
 
 if __name__ == "__main__":
     unittest.main()
