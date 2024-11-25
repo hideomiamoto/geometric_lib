@@ -35,5 +35,6 @@ class TestSquareFunctions(unittest.TestCase):
         with self.assertRaises(ValueError):
             perimeter(a)
 
+
 if __name__ == "__main__":
     unittest.main()
