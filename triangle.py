@@ -1,6 +1,35 @@
-def area(a, b, c):
-    return (a + b + c) / 2
+def area(a, h):
+    '''
+    Возвращает площадь треугольника
+
+        Параметры:
+            a (int): первое десятичное число
+            b (int): второе десятичное число
+
+        Возвращаемое значение: десятичное число
+
+    '''
+    if a <= 0 or h <= 0:
+        raise ValueError("Is not a triangle")
+
+    return a * h / 2
 
 
 def perimeter(a, b, c):
+    '''
+    Возвращает периметр треугольника
+
+        Параметры:
+            a (int): первое десятичное число
+            b (int): второе десятичное число
+
+        Возвращаемое значение: десятичное число, сумма чисел a, b и c
+
+    '''
+    if a <= 0 or b <= 0 or c <= 0:
+        raise ValueError("Is not a triangle")
+
+    if a + b <= c and b + c <= a and a + c <= b:
+        raise ValueError("Is not a triangle")
+
     return a + b + c

@@ -1,0 +1,41 @@
+import unittest
+import math
+from circle import area, perimeter
+
+
+class TestCircleFunctions(unittest.TestCase):
+    def test_area(self):
+        # Arrange
+        r = 3
+        expected_result = math.pi * r * r
+
+        # Act
+        result = area(r)
+
+        # Assert
+        self.assertAlmostEqual(result, expected_result)
+
+    def test_perimeter(self):
+        # Arrange
+        r = 3
+        expected_result = 2 * math.pi * r
+
+        # Act
+        result = perimeter(r)
+
+        # Assert
+        self.assertAlmostEqual(result, expected_result)
+
+    def test_incorrect_area(self):
+        r = -1
+        with self.assertRaises(ValueError):
+            area(r)
+
+    def test_incorrect_perimeter(self):
+        r = -1
+        with self.assertRaises(ValueError):
+            perimeter(r)
+
+
+if __name__ == "__main__":
+    unittest.main()
